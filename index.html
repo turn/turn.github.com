@@ -12,7 +12,7 @@
       h1 { border-bottom: 1px dotted #c7c7c7;
         padding: 1em 0; font-size: 16pt;
         margin-bottom: 1em; }
-      h2 { font-family: 'DINProLight', sans-serif;
+      h2, h3 { font-family: 'DINProLight', sans-serif;
         font-weight: normal; color: #3e2f34; }
       h1 > a { border: none !important; }
       a:link, a:visited { color: #666;
@@ -20,9 +20,13 @@
       a:hover { color: #e37222; }
       p { font-size: 13px; line-height: 18px; }
       p.catch { margin-right: 350px; }
-      div#catchpic { float: right; margin: 0.5em 0 1em 2em; position: relative; }
-      img#catchpicmain { border-radius: 8px 8px 8px 0; max-width: 100%; }
-      div#catchpiccorner { height: 26px; width: 26px;
+      div.clearbar { clear: both; margin: 2em 0 1em 0;
+        border-bottom: 1px dotted #c7c7c7; }
+
+      div.catchleft { float: left; margin: 0.5em 2em 1.5em 0; position: relative; }
+      div.catchright { float: right; margin: 0.5em 0 1.5em 2em; position: relative; }
+      img.catchmain { border-radius: 8px 8px 8px 0; max-width: 100%; }
+      div.catchcorner { height: 26px; width: 26px;
         position: absolute; bottom: 0; left: 0; }
     </style>
   </head>
@@ -33,9 +37,9 @@
       </a>
     </h1>
 
-    <div id="catchpic">
-      <img src="http://www.turn.com/wp-content/uploads/2012/02/platform_image_4.png" id="catchpicmain" />
-      <div id="catchpiccorner">
+    <div class="catchright">
+      <img src="http://www.turn.com/wp-content/uploads/2012/02/platform_image_4.png" class="catchmain" />
+      <div class="catchcorner">
         <img src="http://www.turn.com/wp-content/themes/turn/images/corner.png" />
       </div>
     </div>
@@ -58,5 +62,38 @@
       public repositories.
     </p>
 
+    <div class="clearbar"></div>
+
+    <div class="catchleft">
+      <img src="network.jpg" class="catchmain" />
+      <div class="catchcorner">
+        <img src="http://www.turn.com/wp-content/themes/turn/images/corner.png" />
+      </div>
+    </div>
+
+    <h3><a href="http://turn.github.com/ttorrent/">Ttorrent</a></h3>
+
+    <p>
+      Turn's BitTorrent library, <a
+        href="http://turn.github.com/ttorrent">ttorrent</a>, is an open-source,
+      pure-Java implementation of the BitTorrent protocol, providing an
+      easy-to-embed implementation with a BitTorrent tracker and a
+      downloading/seeding client. Both the tracker and the clients provide
+      hooks for easy integration in a larger application, allowing for tracker
+      control, or download progression updates, for example.
+    </p>
+
+    <p>
+      Ttorrent has been showing very exciting results in terms of global
+      distribution speed and minimal overhead for the initial seeder. Since
+      it's first release, ttorrent has received several contributions from
+      members of the open-source community and has been deployed at <a
+        href="http://etsy.com">Etsy</a> as a mean for distributing their Solr
+      indexes (see <a
+        href="http://codeascraft.etsy.com/2012/01/23/solr-bittorrent-index-replication/">Turbocharging
+        Solr Index Replication with BitTorrent</a>).
+    </p>
+
+    <div class="clearbar"></div>
   </body>
 </html>
