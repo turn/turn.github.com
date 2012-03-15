@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'DINProLight';
+  src: url('fonts/ff-dinprolight-webfont.eot');
+  src: url('fonts/ff-dinprolight-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ff-dinprolight-webfont.ttf') format('truetype'),
+       url('fonts/ff-dinprolight-webfont.svg#DINProLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { margin: 0; padding: 0; background: white;
+  font-family: Helvetica, Arial, sans-serif; color: #666; }
+body { width: 972px; margin: 2em auto; padding: 14px; }
+::selection { background: #fe57a1; color: white; }
+
+h1 { border-bottom: 1px dotted #c7c7c7;
+  padding: 1em 0; font-size: 16pt;
+  margin-bottom: 1em; }
+h2, h3 { font-family: 'DINProLight', sans-serif;
+  font-weight: normal; color: #3e2f34; }
+h1 > a { border: none !important; }
+
+a:link, a:visited { color: #666;
+  text-decoration: none; border-bottom: 1px dotted #c7c7c7; }
+a:hover { color: #e37222; }
+p, li { font-size: 13px; line-height: 18px; }
+p.catch { margin-right: 350px; }
+p#copyright { font-size: 8pt; margin-top: -1em; }
+
+div.clearbar { clear: both; margin: 2em 0 1em 0;
+  border-bottom: 1px dotted #c7c7c7; }
+div.catchleft { float: left; margin: 0.5em 2em 1.5em 0;
+  position: relative; }
+div.catchright { float: right; margin: 0.5em 0 1.5em 2em;
+  position: relative; }
+img.catchmain { border-radius: 8px 8px 8px 0; max-width: 100%; }
+div.catchcorner { height: 26px; width: 26px; bottom: 0; left: 0;
+  position: absolute; }
