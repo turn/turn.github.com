@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>Open-Source | Turn</title>
-    <link rel="shortcut icon"
-      href="http://www.turn.com/wp-content/themes/turn/images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" media="all"
-      href="http://www.turn.com/wp-content/themes/turn/css/typography.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <style type="text/css">
+      @font-face {
+          font-family: 'DINProLight';
+          src: url('fonts/ff-dinprolight-webfont.eot');
+          src: url('fonts/ff-dinprolight-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/ff-dinprolight-webfont.ttf') format('truetype'),
+               url('fonts/ff-dinprolight-webfont.svg#DINProLight') format('svg');
+          font-weight: normal;
+          font-style: normal;
+
+      }
       html, body { margin: 0; padding: 0; background: white;
         font-family: Helvetica, Arial, sans-serif; color: #666; }
       body { width: 972px; margin: 2em auto; padding: 14px; }
@@ -36,16 +43,13 @@
   <body>
     <h1>
       <a href="http://www.turn.com" title="Visit Turn's website">
-        <img src="http://www.turn.com/wp-content/themes/turn/images/turn.png"
-          alt="Turn logo" />
+        <img src="images/turn.png" alt="Turn logo" />
       </a>
     </h1>
 
     <div class="catchright">
-      <img src="http://www.turn.com/wp-content/uploads/2012/02/platform_image_4.png" class="catchmain" />
-      <div class="catchcorner">
-        <img src="http://www.turn.com/wp-content/themes/turn/images/corner.png" />
-      </div>
+      <img src="images/platform.png" class="catchmain" />
+      <div class="catchcorner"><img src="images/corner.png" /></div>
     </div>
 
     <h2>Giving back to the open-source community</h2>
@@ -69,10 +73,8 @@
     <div class="clearbar"></div>
 
     <div class="catchleft">
-      <img src="network.jpg" class="catchmain" />
-      <div class="catchcorner">
-        <img src="http://www.turn.com/wp-content/themes/turn/images/corner.png" />
-      </div>
+      <img src="images/network.png" class="catchmain" />
+      <div class="catchcorner"><img src="images/corner.png" /></div>
     </div>
 
     <h3><a href="http://turn.github.com/ttorrent/">Ttorrent</a></h3>
