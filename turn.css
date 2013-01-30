@@ -36,3 +36,5 @@ div.catchright { float: right; margin: 0.5em 0 1.5em 2em;
 img.catchmain { border-radius: 8px 8px 8px 0; max-width: 100%; }
 div.catchcorner { height: 26px; width: 26px; bottom: 0; left: 0;
   position: absolute; }
+
+.catchright a, .catchleft a{border:none;}
